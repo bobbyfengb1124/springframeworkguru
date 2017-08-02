@@ -7,7 +7,8 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @EntityScan("guru.springframework.spring5webapp.model")
-@ComponentScan("guru.springframework.spring5webapp.bootstrap")
+@ComponentScan(basePackages = { "guru.springframework.spring5webapp.bootstrap",
+		"guru.springframework.spring5webapp.controllers" })
 public class Spring5webappApplication {
 
 	public static void main(String[] args) {
