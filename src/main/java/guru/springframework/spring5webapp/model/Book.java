@@ -35,6 +35,12 @@ public class Book {
 		this.authors = authors;
 	}
 
+	public Book(String title, String isbn, String publisher) {
+		this.title = title;
+		this.isbn = isbn;
+		this.publisher = publisher;
+	}
+
 	public Long getId() {
 		return id;
 	}
